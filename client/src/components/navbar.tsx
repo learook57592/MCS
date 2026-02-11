@@ -42,7 +42,6 @@ export function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="text-white font-bold text-xl tracking-tighter leading-none font-heading uppercase">Met ConSol</span>
-            <span className="text-slate-400 text-[10px] tracking-[0.2em] leading-none uppercase">Инжиниринг</span>
           </div>
         </Link>
 
