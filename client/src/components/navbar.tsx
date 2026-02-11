@@ -17,11 +17,11 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "About", to: "about" },
-    { name: "Services", to: "services" },
-    { name: "Why Us", to: "why-us" },
-    { name: "Portfolio", to: "portfolio" },
-    { name: "Process", to: "process" },
+    { name: "О компании", to: "about" },
+    { name: "Услуги", to: "services" },
+    { name: "Преимущества", to: "why-us" },
+    { name: "Портфолио", to: "portfolio" },
+    { name: "Процесс", to: "process" },
   ];
 
   return (
@@ -42,7 +42,7 @@ export function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="text-white font-bold text-xl tracking-tighter leading-none font-heading uppercase">Met ConSol</span>
-            <span className="text-slate-400 text-[10px] tracking-[0.2em] leading-none uppercase">Engineering</span>
+            <span className="text-slate-400 text-[10px] tracking-[0.2em] leading-none uppercase">Инжиниринг</span>
           </div>
         </Link>
 
@@ -78,7 +78,7 @@ export function Navbar() {
 
           <Link to="contact" smooth={true} offset={-80} duration={800}>
             <Button className="bg-primary hover:bg-primary/90 text-white font-semibold uppercase tracking-wider rounded-sm shadow-lg shadow-primary/20">
-              Request Quote
+              Оставить заявку
             </Button>
           </Link>
         </div>
@@ -122,7 +122,7 @@ export function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-sm">
-                  Request Quote
+                  Оставить заявку
                 </Button>
               </Link>
             </nav>

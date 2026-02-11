@@ -66,7 +66,7 @@ export default function Home() {
             className="mb-6 inline-block"
           >
             <span className="bg-primary/20 text-primary border border-primary/50 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-[0.2em] backdrop-blur-sm">
-              Engineering Excellence
+              Инженерное совершенство
             </span>
           </motion.div>
           
@@ -76,8 +76,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white uppercase tracking-tight leading-tight mb-6 max-w-5xl mx-auto"
           >
-            Steel Structure Design <br />
-            <span className="text-primary">KM & KMD</span> with Tekla BIM
+            Проектирование металлоконструкций <br />
+            <span className="text-primary">КМ и КМД</span> в Tekla BIM
           </motion.h1>
           
           <motion.p 
@@ -86,8 +86,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed"
           >
-            Precision engineering for industrial and commercial construction. 
-            From structural calculations to detailed shop drawings.
+            Профессиональное проектирование для промышленного и гражданского строительства. 
+            От конструктивных расчетов до деталировочных чертежей.
           </motion.p>
           
           <motion.div 
@@ -98,12 +98,12 @@ export default function Home() {
           >
             <ScrollLink to="contact" smooth={true} offset={-80}>
               <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-bold uppercase tracking-widest text-sm px-8 py-6 rounded-sm shadow-[0_0_20px_rgba(255,102,0,0.3)] transition-all hover:scale-105">
-                Request a Quote
+                Оставить заявку
               </Button>
             </ScrollLink>
             <ScrollLink to="portfolio" smooth={true} offset={-80}>
               <Button size="lg" variant="outline" className="w-full sm:w-auto border-slate-600 text-slate-300 hover:text-white hover:bg-slate-800 font-bold uppercase tracking-widest text-sm px-8 py-6 rounded-sm">
-                View Projects
+                Наши проекты
               </Button>
             </ScrollLink>
           </motion.div>
@@ -116,7 +116,7 @@ export default function Home() {
           transition={{ delay: 1.5, duration: 1 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500"
         >
-          <span className="text-[10px] uppercase tracking-widest">Scroll</span>
+          <span className="text-[10px] uppercase tracking-widest">Листайте</span>
           <div className="w-px h-12 bg-gradient-to-b from-primary to-transparent"></div>
         </motion.div>
       </section>
@@ -125,8 +125,8 @@ export default function Home() {
       <section id="about" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4">
           <SectionHeading 
-            title="About Company" 
-            subtitle="Leading the way in structural steel engineering with precision and expertise."
+            title="О компании" 
+            subtitle="Лидеры в области проектирования металлоконструкций с акцентом на точность и экспертизу."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
@@ -140,9 +140,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
                 <Briefcase className="w-8 h-8 text-slate-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 uppercase tracking-tight">10+ Years Experience</h3>
+              <h3 className="text-xl font-bold mb-3 uppercase tracking-tight">10+ лет опыта</h3>
               <p className="text-slate-600 leading-relaxed">
-                A decade of delivering high-complexity steel structure designs for industrial facilities across the region.
+                Десятилетие разработки сложных проектов металлоконструкций для промышленных объектов по всему региону.
               </p>
             </motion.div>
 
@@ -157,9 +157,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
                 <FileCheck className="w-8 h-8 text-slate-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 uppercase tracking-tight">SRO Licensed</h3>
+              <h3 className="text-xl font-bold mb-3 uppercase tracking-tight">Членство в СРО</h3>
               <p className="text-slate-600 leading-relaxed">
-                Fully licensed and certified for all levels of responsibility, ensuring compliance with strict safety standards.
+                Полный допуск к проектированию объектов любого уровня ответственности, соблюдение строгих стандартов безопасности.
               </p>
             </motion.div>
 
@@ -174,9 +174,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
                 <HardHat className="w-8 h-8 text-slate-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 uppercase tracking-tight">Full Cycle Design</h3>
+              <h3 className="text-xl font-bold mb-3 uppercase tracking-tight">Полный цикл</h3>
               <p className="text-slate-600 leading-relaxed">
-                Comprehensive support from initial concept and load calculations to final shop drawings and CNC files.
+                Комплексная поддержка: от концепции и расчетов нагрузок до финальных деталировочных чертежей и ЧПУ-файлов.
               </p>
             </motion.div>
           </div>
@@ -190,8 +190,8 @@ export default function Home() {
         
         <div className="container mx-auto px-4 relative z-10">
           <SectionHeading 
-            title="Our Services" 
-            subtitle="Specialized design solutions for every stage of steel construction."
+            title="Наши услуги" 
+            subtitle="Специализированные решения для каждого этапа проектирования металлоконструкций."
             light
           />
 
@@ -210,16 +210,16 @@ export default function Home() {
                   <div className="p-3 bg-slate-700 rounded-md">
                     <Building2 className="w-10 h-10 text-primary" />
                   </div>
-                  <span className="text-4xl font-black text-slate-700 group-hover:text-slate-600 transition-colors">KM</span>
+                  <span className="text-4xl font-black text-slate-700 group-hover:text-slate-600 transition-colors">КМ</span>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4">Metal Structures (KM)</h3>
+                <h3 className="text-2xl font-bold mb-4">Конструкции Металлические (КМ)</h3>
                 <p className="text-slate-400 mb-8 leading-relaxed">
-                  Development of the main structural framework design. We ensure structural integrity and optimization of metal consumption.
+                  Разработка основного проекта каркаса. Мы гарантируем конструктивную надежность и оптимизацию расхода металла.
                 </p>
                 
                 <ul className="space-y-3">
-                  {["Structural analysis & calculations", "Load distribution modeling", "Technical expertise support", "Material optimization"].map((item, i) => (
+                  {["Конструктивные расчеты", "Моделирование нагрузок", "Поддержка при экспертизе", "Оптимизация материалов"].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-slate-300">
                       <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                       <span className="text-sm">{item}</span>
@@ -243,16 +243,16 @@ export default function Home() {
                   <div className="p-3 bg-slate-700 rounded-md">
                     <Ruler className="w-10 h-10 text-primary" />
                   </div>
-                  <span className="text-4xl font-black text-slate-700 group-hover:text-slate-600 transition-colors">KMD</span>
+                  <span className="text-4xl font-black text-slate-700 group-hover:text-slate-600 transition-colors">КМД</span>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4">Detailed Structures (KMD)</h3>
+                <h3 className="text-2xl font-bold mb-4">Деталировочные чертежи (КМД)</h3>
                 <p className="text-slate-400 mb-8 leading-relaxed">
-                  Precise shop drawings for fabrication. We use Tekla Structures to create BIM models that eliminate assembly errors.
+                  Точные чертежи для производства. Мы используем Tekla Structures для создания BIM-моделей, исключающих ошибки сборки.
                 </p>
                 
                 <ul className="space-y-3">
-                  {["3D Modeling in Tekla Structures", "Detailed shop drawings", "Assembly diagrams", "DSTV/NC export for CNC machines"].map((item, i) => (
+                  {["3D Моделирование в Tekla Structures", "Деталировочные чертежи", "Схемы сборки", "Экспорт DSTV/NC для ЧПУ"].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-slate-300">
                       <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                       <span className="text-sm">{item}</span>
@@ -268,7 +268,7 @@ export default function Home() {
       {/* WHY US SECTION */}
       <section id="why-us" className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
-          <SectionHeading title="Why Choose Us" />
+          <SectionHeading title="Почему мы" />
 
           <motion.div 
             variants={staggerContainer}
@@ -278,10 +278,10 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
-              { icon: Clock, title: "Speed", desc: "Fast turnaround times due to automated BIM workflows and experienced team." },
-              { icon: Ruler, title: "Accuracy", desc: "Zero-error policy using 3D modeling to detect clashes before fabrication." },
-              { icon: Briefcase, title: "Savings", desc: "Material optimization reduces weight and cost without compromising safety." },
-              { icon: Download, title: "Formats", desc: "Delivery in PDF, DWG, NC, IFC - fully compatible with your production." }
+              { icon: Clock, title: "Скорость", desc: "Быстрые сроки благодаря автоматизированным BIM-процессам и опытной команде." },
+              { icon: Ruler, title: "Точность", desc: "Принцип нулевых ошибок: 3D моделирование выявляет коллизии до начала производства." },
+              { icon: Briefcase, title: "Экономия", desc: "Оптимизация металла снижает вес и стоимость без ущерба для безопасности." },
+              { icon: Download, title: "Форматы", desc: "Выдача в PDF, DWG, NC, IFC — полная совместимость с вашим производством." }
             ].map((item, index) => (
               <motion.div 
                 key={index}
@@ -303,18 +303,18 @@ export default function Home() {
       <section id="portfolio" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4">
           <SectionHeading 
-            title="Selected Projects" 
-            subtitle="Diverse experience across industrial, commercial, and civil engineering sectors."
+            title="Наши проекты" 
+            subtitle="Разнообразный опыт в промышленном, коммерческом и гражданском секторах."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Industrial Warehouse Complex",
-              "Shopping Center Atrium",
-              "Aircraft Hangar",
-              "Logistic Hub Terminal",
-              "Sports Stadium Roof",
-              "Manufacturing Plant"
+              "Промышленный складской комплекс",
+              "Атриум торгового центра",
+              "Авиационный ангар",
+              "Терминал логистического хаба",
+              "Кровля стадиона",
+              "Производственный цех"
             ].map((title, i) => (
               <motion.div 
                 key={i}
@@ -334,7 +334,7 @@ export default function Home() {
                   <div className="h-1 w-12 bg-primary mb-3"></div>
                   <h4 className="text-white text-xl font-bold uppercase mb-1">{title}</h4>
                   <p className="text-slate-400 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Design & Modeling • 2023
+                    Проектирование и моделирование • 2023
                   </p>
                 </div>
 
@@ -350,7 +350,7 @@ export default function Home() {
       {/* HOW WE WORK */}
       <section id="process" className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4">
-          <SectionHeading title="Work Process" />
+          <SectionHeading title="Процесс работы" />
 
           <div className="relative">
             {/* Connecting Line (Desktop) */}
@@ -358,11 +358,11 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
               {[
-                { step: "01", title: "Request", desc: "Initial data & requirements" },
-                { step: "02", title: "Estimation", desc: "Commercial proposal" },
-                { step: "03", title: "Contract", desc: "Agreement & prepayment" },
-                { step: "04", title: "Design", desc: "Engineering & modeling" },
-                { step: "05", title: "Delivery", desc: "Drawings & CNC files" },
+                { step: "01", title: "Заявка", desc: "Исходные данные и требования" },
+                { step: "02", title: "Оценка", desc: "Коммерческое предложение" },
+                { step: "03", title: "Договор", desc: "Согласование и предоплата" },
+                { step: "04", title: "Проект", desc: "Инжиниринг и моделирование" },
+                { step: "05", title: "Выдача", desc: "Чертежи и файлы для ЧПУ" },
               ].map((item, i) => (
                 <div key={i} className="flex flex-col items-center text-center group">
                   <div className="w-16 h-16 bg-white border-4 border-slate-100 rounded-full flex items-center justify-center mb-4 shadow-sm group-hover:border-primary group-hover:scale-110 transition-all duration-300">
@@ -389,13 +389,13 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <div className="inline-block px-3 py-1 bg-primary/20 border border-primary/50 rounded-full text-primary text-xs font-bold uppercase tracking-widest mb-6">
-                  Contact Us
+                  Контакты
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight mb-6">
-                  Ready to Start Your <span className="text-primary">Project?</span>
+                  Готовы начать <span className="text-primary">проект?</span>
                 </h2>
                 <p className="text-slate-400 text-lg mb-10 leading-relaxed max-w-md">
-                  Contact us for a preliminary estimate. Our engineers will analyze your architectural drawings and provide a competitive quote within 24 hours.
+                  Свяжитесь с нами для предварительной оценки. Наши инженеры проанализируют ваши чертежи и предоставят коммерческое предложение в течение 24 часов.
                 </p>
 
                 <div className="space-y-6">
@@ -404,9 +404,9 @@ export default function Home() {
                       <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h5 className="text-white font-bold uppercase text-sm mb-1">Phone</h5>
-                      <p className="text-slate-400">+1 (555) 123-4567</p>
-                      <p className="text-slate-500 text-xs mt-1">Mon-Fri, 9am - 6pm</p>
+                      <h5 className="text-white font-bold uppercase text-sm mb-1">Телефон</h5>
+                      <p className="text-slate-400">+7 (999) 123-45-67</p>
+                      <p className="text-slate-500 text-xs mt-1">Пн-Пт, 9:00 - 18:00</p>
                     </div>
                   </div>
 
@@ -416,8 +416,8 @@ export default function Home() {
                     </div>
                     <div>
                       <h5 className="text-white font-bold uppercase text-sm mb-1">Email</h5>
-                      <p className="text-slate-400">info@metconsol.com</p>
-                      <p className="text-slate-500 text-xs mt-1">For requests and drawings</p>
+                      <p className="text-slate-400">info@metconsol.ru</p>
+                      <p className="text-slate-500 text-xs mt-1">Для заявок и чертежей</p>
                     </div>
                   </div>
 
@@ -426,9 +426,9 @@ export default function Home() {
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h5 className="text-white font-bold uppercase text-sm mb-1">Office</h5>
-                      <p className="text-slate-400">123 Industrial Ave, Tech District</p>
-                      <p className="text-slate-500 text-xs mt-1">New York, NY 10001</p>
+                      <h5 className="text-white font-bold uppercase text-sm mb-1">Офис</h5>
+                      <p className="text-slate-400">ул. Индустриальная, 123</p>
+                      <p className="text-slate-500 text-xs mt-1">Москва, 101000</p>
                     </div>
                   </div>
                 </div>
@@ -459,12 +459,12 @@ export default function Home() {
             </div>
             
             <p className="text-slate-500 text-sm">
-              &copy; {new Date().getFullYear()} Met ConSol Engineering. All rights reserved.
+              &copy; {new Date().getFullYear()} Met ConSol Engineering. Все права защищены.
             </p>
 
             <div className="flex gap-6">
-              <a href="#" className="text-slate-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
-              <a href="#" className="text-slate-500 hover:text-white transition-colors text-sm">Terms of Service</a>
+              <a href="#" className="text-slate-500 hover:text-white transition-colors text-sm">Политика конфиденциальности</a>
+              <a href="#" className="text-slate-500 hover:text-white transition-colors text-sm">Условия использования</a>
             </div>
           </div>
         </div>

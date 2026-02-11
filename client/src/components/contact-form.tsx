@@ -49,7 +49,7 @@ export function ContactForm() {
       </div>
 
       <h3 className="text-2xl font-bold text-slate-800 mb-6 uppercase tracking-tight">
-        Start Your Project
+        Начать проект
       </h3>
 
       <Form {...form}>
@@ -60,10 +60,10 @@ export function ContactForm() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Name</FormLabel>
+                  <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Имя</FormLabel>
                   <FormControl>
                     <Input 
-                      placeholder="John Doe" 
+                      placeholder="Иван Иванов" 
                       {...field} 
                       className="rounded-none border-slate-300 focus:border-primary focus:ring-primary/20 bg-slate-50"
                     />
@@ -77,10 +77,10 @@ export function ContactForm() {
               name="company"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Company</FormLabel>
+                  <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Компания</FormLabel>
                   <FormControl>
                     <Input 
-                      placeholder="Construction Ltd." 
+                      placeholder="ООО СпецСтрой" 
                       {...field} 
                       className="rounded-none border-slate-300 focus:border-primary focus:ring-primary/20 bg-slate-50"
                     />
@@ -96,10 +96,10 @@ export function ContactForm() {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Phone</FormLabel>
+                <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Телефон</FormLabel>
                 <FormControl>
                   <Input 
-                    placeholder="+1 (555) 000-0000" 
+                    placeholder="+7 (999) 000-00-00" 
                     {...field} 
                     className="rounded-none border-slate-300 focus:border-primary focus:ring-primary/20 bg-slate-50"
                   />
@@ -114,10 +114,10 @@ export function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Project Details</FormLabel>
+                <FormLabel className="text-slate-600 font-semibold uppercase text-xs tracking-wider">Детали проекта</FormLabel>
                 <FormControl>
                   <Textarea 
-                    placeholder="Tell us about your project requirements (tonnage, area, deadlines)..." 
+                    placeholder="Расскажите о требованиях (тоннаж, площадь, сроки)..." 
                     className="min-h-[120px] rounded-none border-slate-300 focus:border-primary focus:ring-primary/20 bg-slate-50 resize-none"
                     {...field} 
                   />
@@ -135,10 +135,10 @@ export function ContactForm() {
             {mutation.isPending ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Processing...
+                Обработка...
               </>
             ) : (
-              "Submit Request"
+              "Отправить запрос"
             )}
           </Button>
         </form>
