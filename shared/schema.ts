@@ -11,9 +11,9 @@ export const inquiries = pgTable("inquiries", {
   createdAt: timestamp("created_at").defaultNow(),
 });
 
-export const insertInquirySchema = createInsertSchema(inquiries).omit({ 
-  id: true, 
-  createdAt: true 
+export const insertInquirySchema = createInsertSchema(inquiries).omit({
+  id: true,
+  createdAt: true,
 });
 
 export type Inquiry = typeof inquiries.$inferSelect;

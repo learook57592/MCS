@@ -1,16 +1,16 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { api, type InsertInquiry } from "@shared/routes";
+import { useMutation } from "@tanstack/react-query";
+import { api } from "@shared/routes";
+import type { InsertInquiry } from "@shared/schema";
 import { useToast } from "@/hooks/use-toast";
 
 export function useCreateInquiry() {
-  const queryClient = useQueryClient();
   const { toast } = useToast();
 
   return useMutation({
     mutationFn: async (data: InsertInquiry) => {
       // Validate data against schema before sending
       const validated = api.inquiries.create.input.parse(data);
-      
+
       const res = await fetch(api.inquiries.create.path, {
         method: api.inquiries.create.method,
         headers: { "Content-Type": "application/json" },
@@ -25,7 +25,7 @@ export function useCreateInquiry() {
             const error = api.inquiries.create.responses[400].parse(errorData);
             throw new Error(error.message);
           } catch {
-             throw new Error("Validation failed");
+            throw new Error("Validation failed");
           }
         }
         throw new Error("Failed to send inquiry");
@@ -36,9 +36,10 @@ export function useCreateInquiry() {
     onSuccess: () => {
       toast({
         title: "Quote Requested",
-        description: "We have received your inquiry and will contact you shortly.",
-        variant: "default", 
-        className: "bg-green-600 text-white border-none"
+        description:
+          "We have received your inquiry and will contact you shortly.",
+        variant: "default",
+        className: "bg-green-600 text-white border-none",
       });
     },
     onError: (error) => {

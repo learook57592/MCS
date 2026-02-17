@@ -27,21 +27,27 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-slate-900/95 backdrop-blur-sm shadow-lg py-3" : "bg-transparent py-5"
+        isScrolled
+          ? "bg-slate-900/95 backdrop-blur-sm shadow-lg py-3"
+          : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link 
-          to="hero" 
-          smooth={true} 
+        <Link
+          to="hero"
+          smooth={true}
           className="cursor-pointer flex items-center gap-2 group"
         >
           <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center transform group-hover:rotate-45 transition-transform duration-300">
-             <span className="text-white font-bold text-xl group-hover:-rotate-45 transition-transform duration-300">M</span>
+            <span className="text-white font-bold text-xl group-hover:-rotate-45 transition-transform duration-300">
+              M
+            </span>
           </div>
           <div className="flex flex-col">
-            <span className="text-white font-bold text-xl tracking-tighter leading-none font-heading uppercase">Met ConSol</span>
+            <span className="text-white font-bold text-xl tracking-tighter leading-none font-heading uppercase">
+              MetConSol
+            </span>
           </div>
         </Link>
 
@@ -65,13 +71,19 @@ export function Navbar() {
           <div className="h-6 w-px bg-slate-700 mx-2"></div>
 
           <div className="flex flex-col items-end mr-4">
-            <a href="tel:+1234567890" className="flex items-center gap-2 text-slate-300 hover:text-white text-xs transition-colors">
+            <a
+              href="tel:+1234567890"
+              className="flex items-center gap-2 text-slate-300 hover:text-white text-xs transition-colors"
+            >
               <Phone className="w-3 h-3" />
               <span>+1 (555) 123-4567</span>
             </a>
-            <a href="mailto:info@metconsol.com" className="flex items-center gap-2 text-slate-300 hover:text-white text-xs transition-colors">
+            <a
+              href="mailto:kmd.solution@mail.ru"
+              className="flex items-center gap-2 text-slate-300 hover:text-white text-xs transition-colors"
+            >
               <Mail className="w-3 h-3" />
-              <span>info@metconsol.com</span>
+              <span>kmd.solution@mail.ru</span>
             </a>
           </div>
 
@@ -83,7 +95,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="lg:hidden text-white p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -114,9 +126,9 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="h-px w-full bg-slate-800 my-2"></div>
-              <Link 
-                to="contact" 
-                smooth={true} 
+              <Link
+                to="contact"
+                smooth={true}
                 offset={-80}
                 onClick={() => setIsMobileMenuOpen(false)}
               >

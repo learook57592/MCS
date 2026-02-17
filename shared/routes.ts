@@ -1,5 +1,5 @@
-import { z } from 'zod';
-import { insertInquirySchema, inquiries } from './schema';
+import { z } from "zod";
+import { insertInquirySchema, inquiries } from "./schema";
 
 export const errorSchemas = {
   validation: z.object({
@@ -14,8 +14,8 @@ export const errorSchemas = {
 export const api = {
   inquiries: {
     create: {
-      method: 'POST' as const,
-      path: '/api/inquiries' as const,
+      method: "POST" as const,
+      path: "/api/inquiries" as const,
       input: insertInquirySchema,
       responses: {
         201: z.custom<typeof inquiries.$inferSelect>(),
@@ -25,7 +25,10 @@ export const api = {
   },
 };
 
-export function buildUrl(path: string, params?: Record<string, string | number>): string {
+export function buildUrl(
+  path: string,
+  params?: Record<string, string | number>,
+): string {
   let url = path;
   if (params) {
     Object.entries(params).forEach(([key, value]) => {
